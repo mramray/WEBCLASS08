@@ -1,0 +1,68 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+body {
+	background: #BBE8EC;
+}
+
+header {
+	width: 100%;
+}
+
+.navegacion {
+	width: 1000px;
+	margin: 30px auto;
+	background: #f5f5f5;
+}
+
+.navegacion ul {
+	list-style: none;
+}
+
+.menu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a {
+	display: block;
+	padding: 15px 20px;
+	color: #D13133;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu > li > a:hover {
+	display: block;
+	color: #ce7d35;
+	
+	transition: all .3s;
+}
+
+.submenu {
+	display: block;
+	position: absolute;
+	backgroud: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu > li > a {
+	display: block;
+	padding: 15px;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu > li:hover > .submenu {
+	visibility: visible;
+	opacity: 1;
+}
